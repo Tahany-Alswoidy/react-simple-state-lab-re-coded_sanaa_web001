@@ -11,13 +11,13 @@ export default class Matrix extends Component {
     return this.props.values.map(rowVals => <div className="row">{this.genRow(rowVals)}</div>)
   }
   
-  // render() {
-  //   return (
-  //     <div id="matrix">
-  //       {this.genMatrix()}
-  //     </div>
-  //   )
-  // }
+  render() {
+    return (
+      <div id="matrix">
+        {this.genMatrix()}
+      </div>
+    )
+  }
   
 }
 Matrix.defaultProps = {
